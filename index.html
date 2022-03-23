@@ -14,7 +14,7 @@
 
 <body>
     <header id="inicio">
-        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger shadow">
             <div class="container">
                 <a class="navbar-brand" href="#">Samuel Serna</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,10 +25,10 @@
                 <div class="collapse navbar-collapse" id="contenido-navbar">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="#final" class="nav-link">Estudios</a>
+                            <a href="#estudios" class="nav-link">Estudios</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Habilidades</a>
+                            <a href="#habilidades" class="nav-link">Habilidades</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropProyectos" role="button"
@@ -37,13 +37,13 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby>
                                 <li>
-                                    <a href="#" class="dropdown-items">Proyecto 1</a>
+                                    <a href="#" class="dropdown-items text-decoration-none">Proyecto 1</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="dropdown-items">Proyecto 2</a>
+                                    <a href="#" class="dropdown-items text-decoration-none">Proyecto 2</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="dropdown-items">Proyecto 3</a>
+                                    <a href="#" class="dropdown-items text-decoration-none">Proyecto 3</a>
                                 </li>
                             </ul>
                         </li>
@@ -62,26 +62,121 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <h1 class="text-uppercase pt-2 pt-sm-0">Samuel Serna</h1>
-                    <h2>Desarrollador de software</h2>
-                    <p>Desarrollador de aplicaciones web, móviles y de escritorio</p>
-                    <ul class="list-group list-group-horizontal">
+                    <div class="text-end">
+                        <h1 class="text-uppercase pt-2 pt-sm-0" id="titulo">Samuel Serna</h1>
+                        <h2>Desarrollador de software</h2>
+                        <p>Desarrollador de aplicaciones web, móviles y de escritorio</p>
+                    </div>
+                    <div>
+                        <h3>Acerca de mí:</h3>
+                        <p class="informacion">Soy un joven que vive en la ciudad de Ibagué, tengo 17 años. 
+                            Me gusta disfrutar los pequeños momentos de la vida y soy amante de la comida. :)</p>
+                    </div>
+                    <div class="d-flex justify-content-center ">
+                        <ul class="list-group list-group-horizontal">
+                            <li class="list-group-item">
+                                <a href="https://web.facebook.com/profile.php?id=100013444116330" target="_blank"><i
+                                        class="fa-brands fa-facebook fa-2x" style="color:black"></i></a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://www.instagram.com/samuel._.serna/?hl=es-la" target="_blank"><i
+                                        class="fa-brands fa-instagram fa-2x" style="color:black"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="list-group pt-2">
                         <li class="list-group-item">
-                            <a href="#">
-                                <i class="fa-brands fa-facebook fa-2x"></i>
-                            </a>
+                            <i class="fa-solid fa-calendar-day"></i>
+                            28 de enero de 2005
                         </li>
                         <li class="list-group-item">
-                            <a href="#">
-                                <i class="fa-brands fa-instagram fa-2x"></i>
-                            </a>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <a href="tel:+573112392935" style="color:black" class="text-decoration-none">3112392935</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fa-solid fa-at"></i>
+                            <a href="mailto:ssserna@misena.edu.co" style="color:black"
+                                class="text-decoration-none">ssserna@misena.edu.co</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Ibagué, Tolima, Colombia.
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+    <section class="py-3" id="estudios">
+        <div class="container">
+            <h1>Estudios</h1>
+            <div class="accordion" id="acordeonEstudios">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#uno" aria-expanded="false" aria-controls="uno">
+                            Tecnólogo en análisis y desarrollo de sistemas de información
+                        </button>
+                    </h2>
+                    <div id="uno" class="accordion-collapse collapse" aria-labelledby="estudio1"
+                        data-bs-parent="#acordeonEstudios">
+                        <div class="accordion-body">
+                            <span class="fw-bold">Servicio Nacional de Aprendizaje SENA </span>2022
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="dos">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#estudio2" aria-expanded="false" aria-controls="dos">
+                            Técnico en sistemas
+                        </button>
+                    </h2>
+                    <div id="estudio2" class="accordion-collapse collapse" aria-labelledby="dos"
+                        data-bs-parent="#acordeonEstudios">
+                        <div class="accordion-body">
+                            <span class="fw-bold">Servicio Nacional de Aprendizaje SENA </span>2021
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="tres">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#estudio3" aria-expanded="false" aria-controls="tres">
+                            Bachiller
+                        </button>
+                    </h2>
+                    <div id="estudio3" class="accordion-collapse collapse" aria-labelledby="tres"
+                        data-bs-parent="#acordeonEstudios">
+                        <div class="accordion-body">
+                            <span class="fw-bold">Nuestra Señora del Carmen </span>2021
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </section>
+    <section class="py-3" id="habilidades">
+        <div class="container">
+            <h1>Habilidades</h1>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">PHP</div>
+            </div>
+            <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+            </div>
+            <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+            </div>
+            <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">CSS</div>
+            </div>
+            <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-striped bg-secondary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">HTML</div>
+            </div>
+        </div>
+    </section>
 
 
 
