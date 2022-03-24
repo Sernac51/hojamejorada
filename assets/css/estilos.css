@@ -5,3 +5,10 @@
 .informacion{
     white-space: pre-line;
 }
+li a{
+    color: black;
+}
+#carousel{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
