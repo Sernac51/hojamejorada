@@ -194,10 +194,25 @@
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non temporibus nobis quae
                                 suscipit quo natus? A ullam non magni perferendis cumque eveniet deserunt, facilis
                                 voluptatum voluptas reprehenderit in, velit maxime?</p>
-                            <a href="" class="btn btn-outline-danger rounded-pill">
-                                <i class="fa-solid fa-eye"></i>
-                                Ver proyecto
-                            </a>
+                            <a href="" class="btn btn-outline-danger rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-eye"></i> Ver proyecto</a>
+                                
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Proyecto A</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3 class="text-danger">Este proyecto es melo!</h3> 
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Cerrar</button>
+                                      <a href="https://github.com/Sernac51/hojamejorada" target="_blank" class="btn btn-danger rounded-pill">Ir a repositorio</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                     </div>
                     <div class="card shadow">
@@ -206,10 +221,27 @@
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non temporibus nobis quae
                                 suscipit quo natus? A ullam non magni perferendis cumque eveniet deserunt, facilis
                                 voluptatum voluptas reprehenderit in, velit maxime?</p>
-                            <a href="" class="btn btn-outline-danger rounded-pill">
+                            <a href="" class="btn btn-outline-danger rounded-pill" data-bs-toggle="modal" data-bs-target="#ejemplo">
                                 <i class="fa-solid fa-eye"></i>
                                 Ver proyecto
                             </a>
+                            <div class="modal fade" id="ejemplo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Proyecto B</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3 class="text-danger">Este proyecto es makia!</h3> 
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-danger rounded-pill">Guardar cambios</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                     </div>
                     <div class="card shadow">
@@ -218,10 +250,27 @@
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non temporibus nobis quae
                                 suscipit quo natus? A ullam non magni perferendis cumque eveniet deserunt, facilis
                                 voluptatum voluptas reprehenderit in, velit maxime?</p>
-                            <a href="" class="btn btn-outline-danger rounded-pill">
+                            <a href="" class="btn btn-outline-danger rounded-pill" data-bs-toggle="modal" data-bs-target="#ejemplomodal">
                                 <i class="fa-solid fa-eye"></i>
                                 Ver proyecto
                             </a>
+                            <div class="modal fade" id="ejemplomodal" tabindex="-1" aria-labelledby="#exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Proyecto C</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3 class="text-danger">Este proyecto es lo mejor!</h3> 
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-danger rounded-pill">Guardar cambios</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -232,25 +281,36 @@
         <div class="container">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" id="carousel">
-                  <div class="carousel-item active">
-                    <img src="./assets/img/Dragonball.jpg" class="d-block w-100 h-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/dragon_ball_z_kai.jpeg" class="d-block w-100 h-100"  alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/super.jpg" class="d-block w-100 h-80" alt="...">
-                  </div>
+                    <div class="carousel-item active">
+                        <img src="./assets/img/Dragonball.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-black">Dragon ball</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/dragon_ball_z_kai.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-black">Dragon ball z</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/super.jpg" class="d-block w-100 " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-black">Dragon ball super</h1>
+                        </div>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+            </div>
         </div>
 
     </section>
